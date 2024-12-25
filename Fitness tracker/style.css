@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s; /* Smooth transition for theme change */
+}
+
+h1 {
+    text-align: center;
+}
+
+.profile, .tracker, .goal-setting, .progress, .summary, .history, .notification-settings {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #FFB3BA;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#progressFill {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: white; /* Change text color to white in dark theme */
+}
+
+.dark-theme input, .dark-theme button {
+    background-color: #555;
+    color: white;
+    border: 1px solid #444;
+}
+
+.dark-theme .container {
+    background: #444; /* Darker background for the container */
+}
